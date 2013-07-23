@@ -23,6 +23,8 @@
       .linediv-l {
 	border-right: 1px white solid;
 	}
+	  .linediv-r {
+		  border-left: 1px white solid;
       }
       /* Landscape phones and down */
       @media (max-width: 480px) {
@@ -91,6 +93,11 @@
       .footer a {
 	color: #ccccff;
       }
+      h1.h1mod {
+	color: red;
+	text-align: center;
+      }
+
     </style>
   </head>
   
@@ -98,7 +105,7 @@
 	<!-- Mobile-friendly navbar adapter from example. -->
 	<!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
    
-	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar navbar-inverse navbar-fixed-top"> <!-- NAV BAR -->
 		<div class="navbar-inner">
 			<div class="container">
 				<button type="button" class="btn btn-navbar"
@@ -131,25 +138,25 @@
 
 
 
-		<div class="row-fluid heading">
+		<div class="row-fluid heading"> <!-- HEADING -->
 			<div class="span12">
-				<h1>Smart_Investment_Agent</h1>
+				<h1>Smart_Investor</h1>
 			</div>
 		</div> <!-- row-fluid heading -->
-		<div class="row-fluid subheading">
+		<div class="row-fluid subheading"> <!--SUB-HEADING -->
 			<div class="span12">
 
 
 				<p class="lead">A rule-based AI agent which will analyze your portfolio and suggest changes to enhance performance</p>
 			</div> <!-- span12 -->
 		</div> <!-- row-fluid subheading -->
-		<div class="row-fluid pitch">
+		<div class="row-fluid pitch"> <!-- STOCK CRASH CHART -->
 			<div class="span5 offset1 video">
-				<img class="img-polaroid" src="http://placehold.it/480x300">
+				<img class="img-polaroid" src="crashPlus.png">
 			</div>
 
 			
-		<div class="span5 actions">
+		<div class="span5 actions"> <!-- STATISTICS -->
 			<div class="span8 offset2">
 				<div class="statistics">
 					<div class="span4">		
@@ -200,9 +207,10 @@
 	<!-- -->
 	<div class="row-fluid section1">
 		<div class="span5 offset1 asset">
-			<img class="img-polaroid" src="./InvestmentModelSmall.png">
+			<img class="img-polaroid" src="block_diagram.png">
 		</div>
 		<div class="span5 copy">
+		  <h1 class="h1mod">Then you are ready for <b>The Smart Investor</b></h1>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing
 				elitsed doeiusmod tempor incididunt ut labore et 
@@ -210,11 +218,7 @@
 				nostrud exercitation ullamco laboris nisi ut aliquip 
 				ex ea commodo consequat. Duis aute irure dolor in 
 				reprehenderit in voluptate velit esse cillum dolore 
-				eu fugiat nulla pariatur. Excepteur sint occaecat 
-				cupidatat non proident, sunt in culpa qui officia 
-				deseugiat nulla pariatur. Excepteur sint occaecat 
-				cupidatat non proident, sunt in culpa qui officia
-				runt mollit anim id est laborum.
+				eu fugiat nulla pariatur.
 			</p>
 		</div>
 	</div>

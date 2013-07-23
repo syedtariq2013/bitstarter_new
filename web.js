@@ -1,6 +1,6 @@
 var express = require('express');
 var fs = require('fs');
-var app = express.createServer(express.logger());
+var app = express();
 
 app.get('/', function(request, response) {
   fs.readFile('index.html', 'ascii', function(err,data) {
@@ -8,6 +8,8 @@ app.get('/', function(request, response) {
   	response.send(data);
 	});
 });
+
+app.use(express.static(__dirname + '/images'));
 
 var port = process.env.PORT || 8080;
 app.listen(port, function() {
